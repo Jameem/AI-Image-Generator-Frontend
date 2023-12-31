@@ -1,0 +1,175 @@
+.image-generator {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.header {
+  font-size: 70px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.header span {
+  color: #de1b89;
+  font-weight: 600;
+}
+
+.image-loading {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-loading .image img {
+  width: 512px;
+}
+
+.search-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  width: 1000px;
+  height: 95px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  background: #1f3540;
+}
+
+@media only screen and (max-width: 1140px) {
+  .search {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .search {
+    width: 500px;
+  }
+}
+
+.search-prompt {
+  width: 600px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  padding-left: 35px;
+  margin-right: 35px;
+}
+
+.search-size {
+  width: 110px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  margin-right: 35px;
+}
+
+.search-size option {
+  color: #000;
+}
+
+.search-prompt::placeholder {
+  color: #999;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 85px;
+  font-size: 20px;
+  border-radius: 50px;
+  background: #de1b89;
+  cursor: pointer;
+  color: white;
+}
+
+.button:disabled {
+  background: #e05ca7;
+}
+
+.loading {
+  width: 100%;
+  height: 8px;
+}
+
+.loading text {
+  font-size: 18px;
+}
+
+.bar {
+  width: 0;
+  background: #de1b89;
+}
+
+.full-bar {
+  height: 8px;
+  background: #de1b89;
+  animation: animate 10s linear forwards;
+}
+
+.hide-text {
+  display: none;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.error {
+  color: rgb(204, 5, 5);
+}
+
+.download {
+  position: absolute;
+  margin-left: -85px;
+  margin-top: 10px;
+  text-decoration: none;
+  background: #de1b89;
+  border-radius: 50px;
+  padding: 5px;
+  color: white;
+  font-size: 14px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* position: fixed;
+  bottom: 0;
+  margin: 10px auto; */
+}
+
+.footer a {
+  color: #de1b89;
+  text-decoration: none;
+}
+
+.social {
+  margin-top: 10px;
+}
+
+.social img {
+  margin-left: 10px;
+}
